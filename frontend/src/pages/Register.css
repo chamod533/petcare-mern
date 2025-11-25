@@ -1,0 +1,27 @@
+.register-wrapper {
+  height: 100vh;
+  background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.register-card {
+  width: 420px;
+  background: #ffffffd9;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.register-card h2 {
+  font-weight: 700;
+  color: #0d6efd;
+}
+
+.form-control {
+  padding: 10px;
+  border-radius: 8px !important;
+}
+
+.btn-primary {
+  padding: 12px;
+  font-size: 17px;
+  border-radius: 10px;
+}

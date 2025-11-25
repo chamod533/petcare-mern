@@ -1,0 +1,74 @@
+/* Page background */
+.checkout-page {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #f7f9fc;
+}
+
+/* Card container */
+.checkout-card {
+  width: 380px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.checkout-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Title */
+.checkout-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #202124;
+  text-align: center;
+}
+
+/* Stripe Card Element wrapper */
+.card-element-wrapper {
+  padding: 14px 16px;
+  border: 1px solid #dadce0;
+  border-radius: 12px;
+  background: #fafafa;
+  transition: all 0.2s ease;
+}
+
+.card-element-wrapper:focus-within {
+  border-color: #1a73e8;
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(26, 115, 232, 0.18);
+}
+
+/* Button */
+.pay-btn {
+  font-size: 16px;
+  height: 48px;
+  border-radius: 12px;
+  background: #1a73e8 !important;
+  border: none !important;
+  font-weight: 500;
+  transition: background 0.25s ease, transform 0.1s ease;
+}
+
+.pay-btn:hover:not(:disabled) {
+  background: #1664c4 !important;
+  transform: translateY(-1px);
+}
+
+.pay-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Loading text */
+.loading-text {
+  text-align: center;
+  color: #555;
+  padding: 50px 0;
+  font-size: 18px;
+}

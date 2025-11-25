@@ -1,0 +1,47 @@
+.custom-navbar {
+  background: #fff3c4d9; /* slightly darker soft yellow with transparency */
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(255, 193, 7, 0.6); /* deeper yellow border */
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+  color: #000000 !important; /* darker golden yellow */
+}
+
+.nav-link {
+  font-size: 1rem;
+  color: #ffa000 !important; /* darker yellow for links */
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #ff8f00 !important; /* richer yellow on hover */
+}
+
+.nav-user {
+  font-weight: 600;
+  color: #ffb300; /* golden yellow */
+}
+
+.btn-primary {
+  border-radius: 8px;
+  background-color: #ffb300; /* darker yellow button */
+  border: none;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #ffa000;
+}
+
+.btn-outline-danger {
+  border-radius: 8px;
+  border-color: #ffb300;
+  color: #ffb300;
+}
+
+.btn-outline-danger:hover {
+  background-color: #ffb300;
+  color: #fff;
+}

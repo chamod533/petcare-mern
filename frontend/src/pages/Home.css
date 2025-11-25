@@ -1,0 +1,109 @@
+/* 🌟 Background Wrapper */
+.home-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fff8d6 0%, #fff3b0 100%);
+  padding-bottom: 80px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* 🌟 Page Title */
+.home-title {
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #3c2f00;
+  text-shadow: 0px 1px 2px rgba(0,0,0,0.15);
+  animation: slideDown 0.9s ease forwards;
+}
+
+/* ===========================
+   🔥 HERO SECTION 
+   =========================== */
+.hero-section {
+  width: 100%;
+  height: 570px;
+  background-image: url('/petshop.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-bottom: 4px solid #e6c300;
+  animation: zoomInHero 1.3s ease forwards;
+}
+
+/* Dark gradient overlay */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  
+  z-index: 1;
+}
+
+/* Hero Title Text */
+.hero-section .container {
+  z-index: 2;
+  color: white;
+  text-align: center;
+  animation: fadeHeroText 1.6s ease forwards;
+}
+
+/* ===========================
+   🛍 PRODUCT CARDS
+   =========================== */
+.product-card {
+  transform: translateY(20px);
+  opacity: 0;
+  animation: cardPopIn 0.8s ease forwards;
+}
+
+.product-card:nth-child(2) { animation-delay: 0.1s; }
+.product-card:nth-child(3) { animation-delay: 0.2s; }
+.product-card:nth-child(4) { animation-delay: 0.3s; }
+
+/* ===========================
+   🦶 FOOTER
+   =========================== */
+.footer-section {
+  background: #1c1c1c;
+  margin-top: 100px;
+  animation: fadeIn 1.2s ease;
+}
+
+/* Footer Hover Animations */
+.footer-links a:hover {
+  padding-left: 5px;
+  color: #f1d54b;
+}
+
+/* Social Icons Animation */
+.footer-socials i:hover {
+  transform: scale(1.2);
+  color: #ffe16d;
+}
+
+/* ===========================
+   ✨ ANIMATIONS
+   =========================== */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-15px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes zoomInHero {
+  from { transform: scale(1.04); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeHeroText {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes cardPopIn {
+  0% { opacity: 0; transform: translateY(30px) scale(0.95); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
