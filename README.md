@@ -58,33 +58,38 @@ PetCare is a full-featured e-commerce application designed for selling pet produ
 * Nodemon for development
 * Postman for API testing
 
+---
+
 
 ## ⚙️ Environment Variables
 
 Create `.env` file in `/backend`:
 
-
+```
 MONGO_URI=your_mongodb_connection
 JWT_SECRET=your_secret_key
 STRIPE_SECRET_KEY=your_stripe_key
 STRIPE_WEBHOOK_SECRET=your_stripe_webhook_secret
 PORT=5000
+```
 
+---
 
+## ▶️ Running the App
 
 ### Start backend
 
-bash
+```bash
 cd backend
 npm run dev
-
+```
 
 ### Start frontend
 
-bash
+```bash
 cd frontend
 npm start
-
+```
 
 ---
 
@@ -92,17 +97,17 @@ npm start
 
 To insert sample products into MongoDB:
 
-bash
+```bash
 node seed.js
-
+```
 
 This will populate default categories and products.
 
-
+---
 
 ## 📦 Folder Structure
 
-
+```
 petcare-mern/
  ├── backend/
  │   ├── models/
@@ -114,7 +119,7 @@ petcare-mern/
  │   ├── components/
  │   └── pages/
  └── README.md
-
+```
 
 ---
 
@@ -127,5 +132,7 @@ This project was created as a professional MERN stack learning and portfolio pro
 * Payment gateway integration
 * ADMIN dashboards
 * Full-stack deployment
+
+---
 
 
